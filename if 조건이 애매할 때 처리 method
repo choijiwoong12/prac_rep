@@ -1,0 +1,10 @@
+# 예시 bool type 의 변수 만들어서 처리
+
+check = False 
+  for j in range(1,n+1):
+    if distance[j] == k:
+      print(j)
+      check = True
+      
+  if not check:
+    print(-1)
