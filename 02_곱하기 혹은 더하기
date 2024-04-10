@@ -1,0 +1,15 @@
+array = list(map(int, input()))
+array.sort(reverse = True)
+
+result = 1
+
+if array[0] != 0:
+  for i in array:
+    if i != 0:
+      result *= i
+    
+    else: result += i
+    
+else: result = 0
+
+print(result)    
