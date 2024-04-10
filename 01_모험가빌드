@@ -1,0 +1,17 @@
+n = int(input()) # 모험가 수
+array = list(map(int, input().split())) # 모험가 별 공포도
+
+# 그룹 수 최대 -> 그룹 당 사람 수 최소 -> 공포도가 적은 순으로 그룹지정
+
+
+array.sort()
+result = 0
+count = 0
+
+for i in array:
+  count += 1
+  if count >= i:
+    result += 1
+    count = 0
+
+print(result)
